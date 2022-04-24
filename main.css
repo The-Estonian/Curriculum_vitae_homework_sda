@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+a {
+  color: inherit;
+}
+.container {
+  display: flex;
+  height: 100vh;
+  background: url('../../images/free-background-wallpaper-1.jpg');
+  background-size: cover;
+}
+
+.glass-container {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  border-radius: 12px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  display: flex;
+}
+
+.cv-information {
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.introduction-container {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.introduction-container p {
+  padding-top: 30px;
+  width: 80%;
+  margin: auto;
+}
+
+.introduction-container h1,
+.introduction-container h2,
+.introduction-container h3 {
+  text-align: center;
+  padding: 5px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.contact-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-list li {
+  margin: 20px;
+}
+
+.picture-container img {
+  width: 200px;
+  height: 200px;
+  border: 3px black solid;
+  border-radius: 12px;
+}
+
+.picture-container {
+  margin: 10px;
+  margin-left: auto;
+}
+
+@media (max-width: 1060px) {
+  .glass-container {
+    width: 87%;
+    height: 87%;
+    margin: auto;
+    border-radius: 12px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    display: flex;
+  }
+}
+
+@media (max-width: 945px) {
+  .glass-container {
+    width: 95%;
+    height: 95%;
+    margin: auto;
+    border-radius: 12px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    display: flex;
+  }
+}
+
+@media (max-width: 800px) {
+  .glass-container {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border-radius: 12px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+    
+  }
+  .picture-container {
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  .introduction-container p{
+      width: 100%;
+      padding: 0;
+  }
+  .contact-list li {
+    padding: 4px;
+    border: 2px white solid;
+    margin: 5px;
+    text-align: center;
+}
+}
+
+@media (max-width: 550px) {
+    .picture-container{
+        margin: 10px auto;
+    }
+    .introduction-container{
+        padding: 5px;
+    }
+    .picture-container img {
+        width: 150px;
+        height: 150px;
+    }
+    .contact-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        padding-bottom: 10px;
+    }
+    .contact-list li {
+        padding: 4px;
+        border: 2px white solid;
+        margin: 2px;
+    }
+}
