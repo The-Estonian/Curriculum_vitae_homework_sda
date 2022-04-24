@@ -15,7 +15,7 @@ a {
 .container {
   display: flex;
   height: 100vh;
-  background: url('images/free-background-wallpaper-1.jpg');
+  background: url('https://github.com/The-Estonian/The-Estonian.github.io/blob/a369d105f4ebe55a21007afb9e930f2afb0ac543/images/free-background-wallpaper-1.jpg');
   background-size: cover;
 }
 
